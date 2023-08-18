@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sportify/screen/onboarding/onboarding_screen.dart';
 import 'package:sportify/screen/onboarding/splash_screen.dart';
-
-
-
-
+import 'package:sportify/screen/onboarding/dash_board.dart';
+import 'package:sportify/screen/onboarding/login.dart';
 
 void main() {
   runApp(const MyApp());

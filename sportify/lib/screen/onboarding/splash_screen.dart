@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:sportify/screen/onboarding/dash_board.dart';
 
 import 'package:sportify/screen/onboarding/onboarding_screen.dart';
 
@@ -17,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Timer(const Duration(seconds: 3), () {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const OnboardingScreen()));
+          .push(MaterialPageRoute(builder: (context) => const DashBoard()));
     });
     super.initState();
   }
@@ -26,15 +27,15 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Container(
         height: MediaQuery.of(context).size.height,
-        color: Colors.black,
+        color: Color(0xff491919),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset('asset/images/logo.png', scale: 2,),
+              Image.asset('asset/images/Frame 1.png', scale: 2,),
               SizedBox(height: 5,),
-              const Text('Sportify',
+              const Text('',
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
